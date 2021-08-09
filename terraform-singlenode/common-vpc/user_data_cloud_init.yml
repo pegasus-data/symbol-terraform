@@ -1,0 +1,10 @@
+#cloud-config
+cloud_final_modules:
+  - [users-groups,always]
+users:
+  - name: ubuntu
+    groups: [ wheel ]
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCv5NvyVNCdXd5lpmVDBMOb6aAZCtKhzoEB4uSJALmUpTmjFfHcg/+Ru3tPIwxsBCq8OmxPDWtb8O85ex3/DkBCukx2gafhEwyhVc5Vmq/O4Q7N3v1P3sPRCn++CoA+cfB2WQAXdGmYyiimqDHCpYLGSG+cUkcMhyUKj79WOEJjod2P4lx2jUEax2I7H8mbCovgmwI5/sQ6CUxcXPnLaroXcRVQzHWuO72gBAkSatN+pNNFDz2T6bsZkeO3tufQklesTh60TJNjsFQG9eY6faVtbG/q2IRegxa5T2c4BZEwvMU7fJHadBAEYllfKEhnDoL5FCCl0MTN/7DGmO+eM4F7tMDD5Nad4u8zyuJPEdduRPVxG40ZlSpoe1qZ6u0ZRu1wIF2LBCUmbK8H70UHHuAwo5NKJqyTGn5fyxzKHnVnWK5wynmeAJtAHhlYK8ecKGQndlINUP+Jlm4okN9vt4irVf3PNip3v0fnzC4syHvkQii4c6ZBt1UnOZTI4bOYht0= melvin-chua@ZETA-202009BML7Ls-MacBook-Pro.local
